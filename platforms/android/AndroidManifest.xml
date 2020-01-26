@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest android:versionCode="1" android:versionName="1.0" package="com.thomaskaldahl.skline" xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity android:name="run.ace.AceActivity" xmlns:android="http://schemas.android.com/apk/res/android" />
+    </application>
+</manifest>

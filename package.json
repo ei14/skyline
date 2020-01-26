@@ -1,0 +1,31 @@
+{
+    "name": "skyline",
+    "displayName": "Skyline",
+    "version": "1.0.0",
+    "description": "Your insightful academic planner and scheduler.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Thomas Kaldahl",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^7.1.4",
+        "cordova-ios": "^4.5.5",
+        "cordova-plugin-ace": "^0.1.2",
+        "cordova-plugin-whitelist": "^1.3.4"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-ace": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0"
+    }
+}
