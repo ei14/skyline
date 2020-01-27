@@ -1,0 +1,4 @@
+#Mon Jan 27 10:20:27 CST 2020
+base.0=/home/tk/tsa/skyline/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
