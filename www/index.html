@@ -9,10 +9,22 @@
         <title>Skyline</title>
     </head>
     <body>
-		<div class='notif'>Loading...</div>
+		<div class='popup hidden' id='login-popup'>
+			<div class='box-title'>Create an account</div>
+			<p>E-mail</p>
+			<input type='text' id='email-input'>
+			<p>Username</p>
+			<input type='text' id='username-input'>
+			<p>Password</p>
+			<input type='password' id='password-input'>
+			<p>Password again</p>
+			<input type='password' id='password-confirm'>
+			<div class='button-row'>
+				<input type='button' value='Log in' id='switch-signup' onclick='justLogIn'>
+				<input type='button' value='Sign up' id='signup-button' onclick='signup'>
+			</div>
+		</div>
         <script src="cordova.js"></script>
-		<script>
-			
-		</script>
+		<script src='script.js'></script>
     </body>
 </html>
