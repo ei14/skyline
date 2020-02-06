@@ -10,16 +10,15 @@
     "author": "Thomas Kaldahl",
     "license": "Apache-2.0",
     "dependencies": {
-        "cordova-android": "^8.1.0",
         "cordova-plugin-firebase": "^2.0.5",
-        "cordova-plugin-firebasex": "^7.0.2",
-        "cordova-plugin-whitelist": "^1.3.4"
+        "cordova-plugin-whitelist": "^1.3.4",
+        "cordova-support-android-plugin": "^1.0.1",
+        "cordova-support-google-services": "^1.3.2"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-firebase": {},
-            "cordova-plugin-firebasex": {}
+            "cordova-plugin-firebase": {}
         },
         "platforms": []
     },
