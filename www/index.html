@@ -10,19 +10,19 @@
     </head>
     <body>
 		<div class='popup hidden' id='login-popup'>
-			<div class='box-title'>Create an account</div>
-			<p>E-mail</p>
-			<input type='text' id='email-input'>
+			<div class='box-title' id='login-heading'>Create an account</div>
+			<p class='signup-not-login'>E-mail</p>
+			<input type='text' id='email-input' class='signup-not-login'>
 			<p>Username</p>
 			<input type='text' id='username-input' style='text-transform: uppercase'>
 			<p>Password</p>
 			<input type='password' id='password-input'>
-			<p>Password again</p>
-			<input type='password' id='password-confirm'>
+			<p class='signup-not-login'>Password again</p>
+			<input type='password' id='password-confirm' class='signup-not-login'>
 			<p id='login-error' style='color: red'></p>
 			<div class='button-row'>
-				<input type='button' value='Log in' id='switch-signup' onclick='justLogIn()'>
-				<input type='button' value='Sign up' id='signup-button' onclick='signup()'>
+				<input type='button' value="Log in" id='switch-signup' onclick='justLogIn()'>
+				<input type='button' value='Sign up' id='signup-button' onclick='signup()' class='main-button'>
 			</div>
 		</div>
         <script src="cordova.js"></script>

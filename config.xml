@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.thomaskaldahl.skyline" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Skyline</name>
     <description>
 		Your insightful academic planner and scheduler.
 	</description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="thomas@thomaskaldahl.com" href="https://thomaskaldahl.com">
 		Thomas Kaldahl
 	</author>
     <content src="index.html" />
@@ -23,7 +23,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-ace" spec="^0.1.2" />
-    <engine name="android" spec="^7.1.4" />
-    <engine name="ios" spec="^4.5.5" />
+    <plugin name="cordova-plugin-firebasex" spec="^7.0.2" />
 </widget>

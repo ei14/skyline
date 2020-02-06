@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "780657761265",
+    "firebase_url": "https://skyline-553d8.firebaseio.com",
+    "project_id": "skyline-553d8",
+    "storage_bucket": "skyline-553d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780657761265:android:8e47508fc5da8b66588250",
+        "android_client_info": {
+          "package_name": "com.thomaskaldahl.skyline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780657761265-sjbu3chrehcecb2d3akr6ct85c9f6epl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG-guRnrIYrsBSAXjKcioHsJhY6LmTkWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780657761265-sjbu3chrehcecb2d3akr6ct85c9f6epl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

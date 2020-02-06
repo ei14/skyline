@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/tk/tsa/skyline/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "outputFile": "/home/tk/skyline/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/home/tk/tsa/skyline/platforms/android/app/src/main/res/values/strings.xml",
+                    "source": "/home/tk/skyline/platforms/android/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
@@ -13,28 +13,21 @@
                         "endOffsets": "218,95,154"
                     },
                     "to": {
-                        "startLines": "13,14,15",
+                        "startLines": "3,4,5",
                         "startColumns": "4,4,4",
-                        "startOffsets": "593,657,702",
+                        "startOffsets": "98,162,207",
                         "endColumns": "63,44,58",
-                        "endOffsets": "652,697,756"
+                        "endOffsets": "157,202,261"
                     }
                 },
                 {
-                    "source": "/home/tk/tsa/skyline/platforms/android/app/src/main/res/values/ace_ids.xml",
+                    "source": "/home/tk/skyline/platforms/android/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "9,10,5,11,8,6,7,2,4,1,3",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "407,452,231,510,364,275,320,67,174,17,120",
-                        "endColumns": "43,56,42,54,41,43,42,51,55,48,52",
-                        "endOffsets": "446,504,269,560,401,314,358,114,225,61,168"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,99,156,199,254,296,340,383,435,491,540",
-                        "endColumns": "43,56,42,54,41,43,42,51,55,48,52",
-                        "endOffsets": "94,151,194,249,291,335,378,430,486,535,588"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
                     }
                 }
             ]

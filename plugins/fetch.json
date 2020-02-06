@@ -7,10 +7,18 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-ace": {
+  "cordova-plugin-firebase": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-ace"
+      "id": "cordova-plugin-firebase"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-firebasex": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebasex@^7.0.2"
     },
     "is_top_level": true,
     "variables": {}
