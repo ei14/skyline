@@ -27,6 +27,9 @@ function signup() {
 						errTxt.innerHTML += xhr.responseText;
 					} else {
 						document.getElementById('login-popup').innerHTML = '<div id="box-title">Welcome, ' + username + '.</div>';
+						localStorage.setItem('username', username);
+						localStorage.setItem('password', password);
+						window.location.href = 'main.html';
 					}
 				}
 			}
@@ -54,6 +57,9 @@ function login() {
 						errTxt.innerHTML += xhr.responseText;
 					} else {
 						document.getElementById('login-popup').innerHTML = '<div id="box-title">Welcome, ' + username + '.</div>';
+						localStorage.setItem('username', username);
+						localStorage.setItem('password', password);
+						window.location.href = 'main.html';
 					}
 				}
 			}
@@ -88,5 +94,3 @@ function justSignUp() {
 if(localStorage.getItem('username') == null) {
 	document.getElementById('login-popup').classList.remove('hidden');
 }
-
-FCMPlugin.getToken();

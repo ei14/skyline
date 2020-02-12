@@ -104,3 +104,17 @@ input[type=text]:focus, input[type=password]:focus {
 	border-right: 12px solid white;
 	width: calc(100% - 2vh - 24px);
 }
+
+input[type=checkbox] {
+	background-color: black;
+	border: 2px solid white;
+	width: 3vh;
+	height: 3vh;
+	appearance: none;
+	-webkit-appearance: none;
+	transition: background-color 0.15s;
+}
+
+input[type=checkbox]:checked {
+	background-color: white;
+}
