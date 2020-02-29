@@ -7,27 +7,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-firebasex": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-firebasex"
-    },
-    "is_top_level": true,
-    "variables": {
-      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
-      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
-      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
-      "ANDROID_ICON_ACCENT": "#FF00FFFF",
-      "ANDROID_PLAY_SERVICES_TAGMANAGER_VERSION": "17.0.0",
-      "ANDROID_FIREBASE_ANALYTICS_VERSION": "17.2.1",
-      "ANDROID_FIREBASE_MESSAGING_VERSION": "20.0.0",
-      "ANDROID_FIREBASE_CONFIG_VERSION": "19.0.3",
-      "ANDROID_FIREBASE_PERF_VERSION": "19.0.1",
-      "ANDROID_FIREBASE_AUTH_VERSION": "19.1.0",
-      "ANDROID_CRASHLYTICS_VERSION": "2.10.1",
-      "ANDROID_CRASHLYTICS_NDK_VERSION": "2.1.1"
-    }
-  },
   "cordova-plugin-androidx": {
     "source": {
       "type": "registry",
@@ -43,5 +22,61 @@
     },
     "is_top_level": false,
     "variables": {}
+  },
+  "de.appplant.cordova.plugin.local-notification": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-local-notifications@^1.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-local-notification": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/katzer/cordova-plugin-local-notifications.git"
+    },
+    "is_top_level": true,
+    "variables": {
+      "ANDROID_SUPPORT_V4_VERSION": "26.+"
+    }
+  },
+  "cordova-plugin-badge": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-badge@>=0.8.5"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-firebasex": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebasex"
+    },
+    "is_top_level": true,
+    "variables": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
+      "ANDROID_ICON_ACCENT": "#FF00FFFF",
+      "ANDROID_PLAY_SERVICES_TAGMANAGER_VERSION": "17.0.0",
+      "ANDROID_PLAY_SERVICES_AUTH_VERSION": "17.0.0",
+      "ANDROID_FIREBASE_ANALYTICS_VERSION": "17.2.1",
+      "ANDROID_FIREBASE_MESSAGING_VERSION": "20.0.0",
+      "ANDROID_FIREBASE_CONFIG_VERSION": "19.0.3",
+      "ANDROID_FIREBASE_PERF_VERSION": "19.0.1",
+      "ANDROID_FIREBASE_AUTH_VERSION": "19.1.0",
+      "ANDROID_CRASHLYTICS_VERSION": "2.10.1",
+      "ANDROID_CRASHLYTICS_NDK_VERSION": "2.1.1"
+    }
   }
 }

@@ -2,6 +2,18 @@
 <manifest android:versionCode="1" android:versionName="1.0" package="com.thomaskaldahl.skline" xmlns:android="http://schemas.android.com/apk/res/android">
     <application>
         <activity android:name="run.ace.AceActivity" xmlns:android="http://schemas.android.com/apk/res/android" />
+        <provider android:authorities="${applicationId}.localnotifications.provider" android:exported="false" android:grantUriPermissions="true" android:name="de.appplant.cordova.plugin.notification.util.AssetProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/localnotification_provider_paths" />
+        </provider>
+        <receiver android:exported="false" android:name="de.appplant.cordova.plugin.localnotification.TriggerReceiver" />
+        <receiver android:exported="false" android:name="de.appplant.cordova.plugin.localnotification.ClearReceiver" />
+        <service android:exported="false" android:name="de.appplant.cordova.plugin.localnotification.ClickReceiver" />
+        <receiver android:directBootAware="true" android:exported="false" android:name="de.appplant.cordova.plugin.localnotification.RestoreReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
         <service android:name="org.apache.cordova.firebase.FirebasePluginMessagingService">
             <intent-filter>
@@ -15,7 +27,8 @@
         <meta-data android:name="firebase_performance_collection_enabled" android:value="true" />
         <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="true" />
     </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
 </manifest>

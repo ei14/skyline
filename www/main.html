@@ -9,8 +9,73 @@
         <title>Skyline</title>
     </head>
     <body>
-		This is the app.
+		<div id='blur-behind' class='not-blurring-behind'></div>
+		<div id='sidebar-behind' class='sidebar-behind-hidden' onclick='closeMenu()'></div>
+		<div class='popup hidden' id='new-task-popup'>
+			<div class='popup-content'>
+				<div class='box-title'>New task</div>
+				<p>Do What?</p>
+				<input type='text' id='what-input'>
+				<p>Due When?</p>
+				<input type='date' id='date-input'>
+				<input type='time' id='time-input'>
+				<p>Due for what subject?</p>
+				<!--<select id='for-input'>
+					<option>Select Subject...</option>
+					<option>Calculus</option>
+					<option>Physics</option>
+					<option>Chemistry</option>
+				</select>-->
+				<input type='text' id='for-input'>
+				<p>How long will it take?</p>
+				<input type='number' id='long-input-num' class='input-half'>
+				<select id='long-input-time' style='width:49%;'>
+					<option>Minutes</option>
+					<option>Hours</option>
+					<option>Days</option>
+				</select>
+				<p>How important is it?</p>
+				<input type='range' id='importance-input'>
+				<p>Anything you'd like to add?</p>
+				<textarea id='extra-input'></textarea>
+			</div>
+			<div class='button-row'>
+				<input type='button' value='Cancel' onclick='closeNewTask()'>
+				<input type='button' value='Submit' class='main-button' onclick='uploadTask()'>
+			</div>
+		</div>
+		<div class='header'>
+			<svg width='5vh' height='5vh' id='hamburger' class='icon' onclick='openMenu()'>
+				<line x1='0' y1='1.5vh' x2='5vh' y2='1.5vh'/>
+				<line x1='0' y1='3vh' x2='5vh' y2='3vh'/>
+				<line x1='0' y1='4.5vh' x2='5vh' y2='4.5vh'/>
+			</svg>
+			To Do
+		</div>
+		<div id='sidebar'>
+			<div class='sidebar-row' style='text-align: right' onclick='closeMenu()'>
+				<svg width='5vh' height='5vh' class='icon' style='margin-right:5vh'>
+					<line x1='0.5vh' y1='2.5vh' x2='2.5vh' y2='0.5vh' stroke-linecap='square'/>
+					<line x1='0.5vh' y1='2.5vh' x2='5vh' y2='2.5vh'/>
+					<line x1='0.5vh' y1='2.5vh' x2='2.5vh' y2='4.5vh' stroke-linecap='square'/>
+				</svg>
+			</div>
+			<div class='sidebar-row' onclick='closeMenu()'>To Do</div>
+			<div class='sidebar-row' onclick='updateTasks();closeMenu()'>Refresh</div>
+			<div class='sidebar-row' onclick='deleteAll()'>Delete All</div>
+			<div class='sidebar-row' onclick='logOut()'>Log Out</div>
+		</div>
+		<div id='main-content'>
+			<div id='error-text' style='color:gray'></div>
+			<div id='tasks'></div>
+		</div>
+		<div id='new-task-button' onclick='openNewTask()'>
+			<svg width='10vh' height='10vh' class='icon'>
+				<line x1='3vh' y1='5vh' x2='7vh' y2='5vh'/>
+				<line y1='3vh' x1='5vh' y2='7vh' x2='5vh'/>
+			</svg>
+		</div>
         <script src="cordova.js"></script>
-		<script src='script.js'></script>
+		<script src='main.js'></script>
     </body>
 </html>
